@@ -1,0 +1,51 @@
+
+/* ####################################### Section 2############################################# */
+
+
+.section2{
+    background-color:aliceblue;
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.section2-container{
+    margin-top: 5vh;
+    width: 85%;
+}
+/* main heading "service"  styling*/
+.section2-container .service-heading{
+    text-align: center;
+    position: relative;
+    animation: apper 1s forwards;
+    transition: all 1s ease-in-out;
+}
+/* SERVICE FONT INCREASING STYLE  */
+.section2 .main-heading{
+    font-size: 3rem;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+}
+
+/* Styling Service container in which all sevrvice box is placed */
+.service-container{
+    display: flex;
+    min-height: 30vh; 
+}
+/* individual box styling */
+.service-box{
+    background-color: white;
+    margin: 1rem;
+    padding: 2.5rem;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.473);
+    /* transition: hover 1s ease-in-out; */
+}
+.service-box:hover{
+    transform: scale(1.1);
+    background-color: #2605fa0a;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.service-head-st{
+    font-size: 2.5rem;
+}
+

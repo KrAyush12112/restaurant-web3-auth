@@ -1,0 +1,216 @@
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+.modal {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.modal-overlay.active .modal {
+    transform: scale(1);
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+.close-btn:hover {
+    color: #ff6b35;
+}
+.modal-food-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+.modal-food-image img {
+    width: 15rem;
+    height: 100px;
+    object-fit: contain;
+}
+.modal-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.quantity-section {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 1.6rem;
+    margin-bottom: 1.7rem;
+    text-align: center;
+}
+.quantity-label {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.quantity-btn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: #ff6b35;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quantity-btn:hover {
+    background: #e55a2b;
+    transform: scale(1.1);
+}
+.quantity-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+.quantity-display {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    min-width: 40px;
+}
+.description-section {
+    margin-bottom: 2rem;
+}
+.description-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.description-text {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+.instructions-section {
+    margin-bottom: 25px;
+}
+.instructions-label {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.instructions-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+.instructions-input:focus {
+    outline: none;
+    border-color: #ff6b35;
+}
+.price-section {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.price-label {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+.total-price {
+    font-size: 2rem;
+    color: #ff6b35;
+    font-weight: 700;
+}
+.confirm-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.confirm-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.4);
+}
+
+
+
+/* MEdia query */
+@media (max-width: 768px) {
+    .modal {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .modal-food-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .modal-food-image img {
+        width: 80px;
+        height: 80px;
+    }
+}

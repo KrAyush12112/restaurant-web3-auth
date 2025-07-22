@@ -1,0 +1,247 @@
+
+/* ######################## HAMBURGER ########################## */
+@media (max-width:850px){
+    #menu{
+        width: 3.5rem;
+        height: 3rem;
+        margin: 3rem 0 3rem 2rem;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .bar{
+        height: 0.5rem;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        border-radius: 0.5rem;
+        transition: 0.3s ease-in;
+    }
+    
+    /* #bar1 and #bar3: Each bar is adjusted vertically slightly with the transform property to position them for visual effect. */
+    #bar1{
+        transform: translateY(-0.4rem);
+    }
+    #bar3{
+        transform: translateY(0.4rem);
+    }
+    
+    .nav{
+        display: none;
+        padding: 0;  
+        margin: 0 20px;
+        transition: 0.5s ease;
+    }
+    .nav li a{
+        color: #fff;
+    }
+    .nav li a:hover{
+        border: 1px solid rgb(252, 252, 252);
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    
+    .nav li{
+        padding: 1.6rem 0;
+        /* font-size: 3rem; */
+    }
+    
+    
+    
+    .icon .bar{
+        background-color: #f2f2f2;
+    }
+    .icon #bar1{
+        transform: translateY(2px) rotate(-45deg);
+    }
+    .icon #bar2{
+        opacity: 0;
+    }
+    .icon #bar3{
+        transform: translateY(-6px) rotate(45deg);
+    }
+    
+    .change{
+        background-color: #000402;
+        height: 100vh;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        font-size: 3rem;
+        z-index: 1;
+        width: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+
+    /* ################################## MEDIA QUERY ############################### */
+    
+@media only screen and (max-width:1000px) {
+.change{
+    width: 40%;
+}
+}
+
+
+/* COMMON FOR ALL BELLOW 850PX*/
+@media (max-width:850px){
+
+    .service-box {
+        text-align: center;
+    }
+html{
+    font-size: 45%;
+}
+.moto .moto_h {
+    /* font-size: 6rem; */
+    font-size: calc(1.525rem + 4vw);
+}
+.moto .moto_p {
+    /* font-size: 2.5rem; */
+    font-size: calc(0.3rem + 2vw);
+}
+.header .moto {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    width: 95%;
+    /* position: relative; */
+}
+    
+/* TO CHANGE FROM COLOUM TO ROW FORM */
+.header .container .navbar .nav-list {
+    display:block;
+}
+
+/* $$$$$$$$$$$$$$$$$ HAMBURGER MEDIA QUERY $$$$$$$$$$$$$$$$$$$$ */
+#menu{
+    position: relative;
+}
+/* sOUL OF NAV-BAR */
+.header .container .navbar {
+    /* background-color: rgba(6, 6, 6, 0.479); */
+    border-radius: 1px 1px 5rem 5rem;
+    display: flex;
+    position: fixed;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+    width: inherit;
+}
+
+/* .header .moto {
+position:absolute;
+    
+} */
+.change{
+    width: 50%;
+    position: absolute;
+    /* top: -1.5rem; */
+    left: -1.3rem;
+    
+}
+.header .container .navbar .logo {
+    margin-right: 1rem;
+}
+
+}
+
+
+@media (max-width:500px) {
+/* #########################section 1##################### */
+.moto .moto_h , .moto_p {
+    font-size: 6rem;
+}
+.header .moto {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section1 .aboutUsWrapper .aboutUs-imgs{
+    grid-template-columns: none; 
+}
+
+.aboutUs-imgs .rest-food {
+    height: 100%;
+    width: 100%;
+}
+.rest-eater {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.rest-sitplace {
+    display: none;
+}
+
+.service-container{
+    flex-wrap: wrap;
+}
+ /* #########################section 2##################### */
+.section2{
+    height: auto;
+}
+.fa-5x {
+    font-size: 3em;
+}
+.service-box {
+    
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+/* ################################# SECTION 3 ######################## */
+.section3{
+    height: auto;
+}
+.section3 .view-more{
+    margin: 1rem auto;
+    width: 15rem;
+}
+.food-wrapper{
+    margin-top: 0;
+    row-gap: 0;
+}
+ /* #########################section 4##################### */
+.section4{
+    height: auto;
+}
+.section4 .container .reserve-table{
+   display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+.reserve-table .reserve-image{
+    width: 100%;
+    height: 200%;
+    object-fit:fill;
+}
+
+.reserve-table .reserve-form{
+    background-color: #8f0d93;
+    padding: 0 1rem ;
+    
+}
+.form-wrapper{
+    display:block;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    
+}
+/* ################### FOOTER MEDIA QUERY ################ */
+.footer .footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-heading{
+    margin-top: 1rem;
+}
+}

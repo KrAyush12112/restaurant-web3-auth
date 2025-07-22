@@ -1,0 +1,79 @@
+
+/* ############################################SECTION3###################################### */
+
+
+.section3{ 
+    height: auto;
+    
+   
+}
+.section3 .sub-heading{
+    text-align: center;
+}
+
+.food-wrapper{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 4rem;
+    column-gap: 1rem;
+    margin-top: 2rem;
+    transition:  1s ease-in-out;
+}
+
+/* extented view more animation */
+.x {
+    /* overflow: hidden;  */
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Add smooth transition */
+}
+
+.animate{
+    max-height: 90vh; /* max height tak jaye*/
+    opacity: 1;
+}
+
+
+.food-item:hover{
+    /* border: 2px solid green; */
+    transform: scale(1.1);
+    transition: 0.3s ease;
+
+}
+
+.food-wrapper .hidden-item{
+    display: none;
+}
+
+/* 
+food image style */
+.section3 .food-image{
+    width:auto;
+    height: 15rem;
+    object-fit: contain;
+}
+
+/* Food name center */
+.section3 .para{
+    text-align: center;
+}
+
+/* view more button style */
+.section3 .view-more{
+    /* grid-column: yeh kise bhe grid me box ko shift karne me help karta hai; */
+    grid-column: -4/-3; 
+    color: white;
+    margin: 1rem auto;
+    font-size: 1.7rem; 
+    padding: 1rem 2rem;
+    background: #d50b0be9;
+    border-radius: 3rem;
+    transition: 0.5s ease;
+   
+}
+.section3 .view-more:hover{
+    background: #0b69d5e9;;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}

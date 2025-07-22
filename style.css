@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Fredoka:wdth,wght@75..125,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+/* Basic reset for margins, paddings, and box-sizing */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    
+    font-size: 62.5%; /* This makes 1rem = 10px */
+    scroll-behavior:smooth
+}
+body{
+    font-family: 'nunito',Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family:'montserrat', sans-serif;
+}
+
+input , textarea ,select{
+    border-radius: 2rem;
+}
+
+.main-heading{
+    font-size: 2rem;
+    color: #FEA116 !important;
+    font-family: "pacifico",cursive;
+    margin-top: 2rem;
+}
+.sub-heading{
+    font-size:3rem;
+    font-family: "pacifico",cursive;
+    color: black;
+    font-weight: 900;
+
+}
+
+.para{
+    padding-top: 0rem;
+    /* font-family: sans-serif; */
+    font-size:1.8rem;
+    color: black;
+    font-weight: 500;
+    color: gray;
+}
+
+img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+}
+
+
+/* For under line below any text */
+.underline-text {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+  
+  .underline-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 0.3rem; 
+    background-color:#FEA116; 
+}
+
+/* Above are utility classes */
+
+
+/* Header styling */
+.header{
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem 0;
+    height: 97vh;
+} 
+
+/* this will bring text above the images */
+.container{
+    position: relative;
+    height: 100%;
+    z-index: 2;
+} 
+
+
+
+
+/* Navbar grid structure */
+.header .container .navbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+}
+
+/* Logo styling */
+.header .container .navbar .logo {
+    width: 25%;
+}
+
+#navigation {
+    padding-bottom: 10%;
+}
+
+/* Navigation list styling */
+.header .container .navbar .nav-list {
+    display: flex;
+    justify-content: flex-end; /* Align the nav items to the right */
+    /* gap: 1rem; Add some space between items */
+    /* flex-wrap: wrap; */
+}
+
+.header .container .navbar .nav-items a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+    color: #f8f8f8;
+    text-transform: uppercase;
+}
+
+/* Hover effect for navigation items */
+.header .container .navbar .nav-items a:hover {
+    color: #007bff; /* Change color on hover */
+    font-size: 1.5rem;
+}
+
+/* register button style */
+.Register {
+    background-color: rgba(255, 0, 0, 0.622);
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    padding: 2.5px 2.5rem;
+    margin-bottom: 0; /* Remove margin-bottom */
+    margin-left: 2rem;
+    border: none;
+}
+
+.nav-list .btn a {
+    color: rgb(255, 247, 0);
+    text-decoration: none;
+    /* padding: 5px , 20px; */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Hover stlye on nav-item */
+.nav-list .btn a:hover{
+    color:  #ffffff;
+    font-size: 1.7rem;
+}
+
+
+
+/* Moto/heading Styling */
+ .header .moto
+{
+    display: flex;
+    position: relative;
+    justify-content: center;  /* Horizontal center */
+    align-items:flex-start;      /* Vertical center */
+    height: 70vh;            /* Full screen height */
+    flex-direction:column;
+    animation: apper 1s forwards;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes apper {
+    /* from{
+    opacity: 0;
+    transform: translateX(-100px);
+    }
+    to{
+    opacity: 1;
+    transform: translateX(0px);
+    } */
+     0%{
+        opacity: 0;
+        transform: translateX(-100px);
+     }
+     100%{
+        opacity: 4;
+        transform: translateX(0px);
+     }
+}
+
+.moto h1{
+    font-size: calc(1.525rem + 3.3vw);
+    color: #f8f8f8;
+    text-shadow: rgba(0, 0, 0, 0.66) 2px 5px;
+}
+
+.moto p{
+    font-size: 2rem;
+    color: #f8f8f8;
+    
+    
+}
+
+/* Order Now button styling */
+.moto  .order-now{
+    background-color: rgba(255, 0, 0, 0.622);
+    border-radius: 1rem;
+    font-size: 3rem;
+    padding: 2.5px 2.5rem;
+    align-items:center; 
+    margin-top: 1rem;
+    outline: none;
+    border:none;
+    box-shadow: 3px 5px 4px 1px #000000;
+}
+/* styling order now button */
+.moto .order-now a{
+    color:rgb(255, 234, 0);
+    font-weight: 600;
+    outline: none; 
+    transition: 0.3s ease;
+}
+/* Hover style on Order-now button */
+.moto .order-now:hover{
+    transform:scale(1.2);
+    transition: 1s ease;
+}
+
+

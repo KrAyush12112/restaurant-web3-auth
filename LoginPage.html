@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Web3 Profile</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.1/web3.min.js"></script>
+    <link rel="stylesheet" href="LoginStyle.css">
+    <script src="Auth.js"></script>
+</head>
+<body>
+    <div class="register-container">
+        <h2 class="main-heading">Create Your Web3 Profile</h2>
+
+        <!-- // Profile Picture Section -->
+        <div class="profile-section">
+            <div class="profile-picture" onclick="document.getElementById('profile-upload').click()">
+                <img id="profile-preview" src="./images/ethereum-1.jpeg" alt="Profile Picture">
+            </div>
+            <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+        </div>
+
+        <!-- // Wallet Connection Section -->
+        <button class="connect-wallet-btn" onclick="connectWallet()">Connect Wallet</button>
+        <div class="wallet-address" id="wallet-address"></div> <!-- jab wallet connect hoga to addres retun hoga -->
+
+        <form action="" class="form-wrapper">
+            <!-- <label for="name"></label> -->
+            <input type="text" id="name" required placeholder="Name">
+            <!-- <label for="email"></label> -->
+            <input type="email" id="email" required placeholder="Email">
+            <!-- <label for="count"></label> -->
+            <input type="password" id="password" required placeholder="Password">
+        </form>
+        <button class="connect-wallet-btn" onclick="completeRegistration()" style="background-color: #0984e3;">Register Now</button>
+
+        <div id="status-message" class="status-message"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+/* #####################################SECTION 4######################################### */
+.section4{
+    height: auto;
+    background-color: aliceblue ;
+}
+.reserve-table{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem 0;
+}
+
+.reserve-table .reserve-image{
+    position: relative;
+}
+.reserve-table .reserve-form{
+    background-color: #8f0d93;
+    padding: 0 3rem ;
+    display: grid;
+    align-items: start;
+}
+.reserve-table .reserve-image img{
+    position: absolute;
+    object-fit:cover;
+}
+
+.form-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    
+}
+.form-wrapper input{
+    /* display: inline-block; */
+    height: 5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+.form-wrapper textarea{
+    grid-column: 1/3;
+    resize: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+
+.section4 .view-more{
+    color: white;
+    justify-self: center;
+    font-size: 1.7rem; 
+    padding: 1rem 2rem;
+    background: #d50b0be9;
+    border-radius: 3rem;
+}
+.section4 .view-more:hover{
+    background: #0b69d5e9;;
+    transform: scale(0.9);
+    
+}

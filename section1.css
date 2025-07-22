@@ -1,0 +1,67 @@
+
+/* ###################################### SECTION 1 ####################################### */
+
+.section1{
+    background-color: rgba(255, 255, 255, 0.54);
+
+}
+.section1 .aboutUsWrapper{
+    margin-top: 5vh;
+    /* height: 50vh; */
+    display: grid;  
+    grid-template-columns: 1fr 1fr; /*divide two column*/
+    column-gap:2rem; /* gap between column*/
+}
+
+/* style img column */
+.section1 .aboutUs-imgs{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    /* border: 2px solid black; */
+    gap: 6px;
+}
+/* IMPORTANT */
+.aboutUs-imgs .imgs img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style individua image small big effect */
+.rest-food{
+    height: 80%;
+    width: 80%;
+    align-self: end;
+    /* place-self: start end; */
+}
+.rest-eater{
+    height: 80%;
+    width: 80%;
+    place-self: start end;
+}
+
+/* ############################################### STYLING SECOND COLUMN######################### */
+
+.about-counts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+
+.about-counts h1{
+    font-size: 4rem;
+    color: #FEA116;
+    margin-left: 2.5rem;
+    padding-top: 2rem;
+
+}
+
+.about-counts P,h5{
+    color: grey;
+    font-size: 2rem;
+    text-align: center;
+}
+

@@ -1,0 +1,25 @@
+
+/* ###################################### Footer Section############################# */
+
+.footer{
+    background-color: #082544;
+}
+
+.footer .footer-section{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-section a{
+    display:block;
+    line-height: 3rem;
+}
+.footer .footer-section a:hover{
+    color: #007bff;
+}
+.footer .copyright-section{
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+    background-color: #007bff;
+    margin-top: 1rem;
+}

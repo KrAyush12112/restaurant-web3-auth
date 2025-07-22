@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+html {  
+    font-size: 62.5%; /* This makes 1rem = 10px */
+    scroll-behavior:smooth
+}
+
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(45,0,54); 
+    background: url("./images/cybersecurity-concept-illustration.jpg");
+    background-size: cover;        /* Image covers the whole area */
+    background-repeat: no-repeat;  /* Image does not repeat */
+    background-position: center;
+}
+.main-heading{
+    font-size: 3rem;
+    color: #FEA116 ;
+    font-family: "pacifico",cursive;
+    margin-top: 2rem;
+    border-radius: 4rem;
+    border: 1px solid #FEA116;
+}
+
+.register-container {
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 1.5rem  1rem 2rem 1rem rgba(0, 0, 0, 0.515);
+    width: 60%;
+    height: 80vh;
+    max-width: 50rem;
+    text-align: center;
+    position: relative;
+    background-color: #0632582e;
+}
+
+.profile-section {
+    margin: 2rem 0;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #dfe6e9;
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-picture:hover::after {
+    content: 'Upload Photo';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.connect-wallet-btn {
+    background: linear-gradient(36deg, rgb(39 50 122 / 88%) 6%, rgb(222 33 33) 120%);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size: 1.9rem;
+    transition: background-color 0.3s;
+    width: 50%;
+    margin : 1rem;
+    border: 1px solid #dfe6e971;
+}
+
+.connect-wallet-btn:hover {
+    background-color: #00a28d;
+}
+
+.wallet-address {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    word-break: break-all;
+    display: none;
+}
+
+.form-group {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2d3436;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.status-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: none;
+}
+
+.success {
+    background-color: #55efc4;
+    color: #00664d;
+}
+
+.error {
+    background-color: #ff7675;
+    color: #800000;
+}
+
+
+
+
+
+/* ----------------------- */
+.form-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+     /* background: hsl(209.87deg 76.43% 14.72% / 36%); */
+    
+}
+.form-wrapper input {
+    height: 5rem;
+    padding: 1rem;
+    color: #f5f5f5;
+    font-size: 2rem;
+    border-radius: 3rem;
+    background: hsla(210, 79%, 7%, 0.36);
+    border: 2px solid #f5f5f5;
+}
+
+.form-wrapper input::placeholder,
+.form-wrapper textarea::placeholder {
+    color: #fff;
+   
+}
+
+.form-wrapper textarea{
+    /* grid-column: 1/3; */
+    resize: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.register{
+    padding-top: 1rem;
+}
+
+@media (max-width:1000px) {
+    .register-container {
+        width: 91%;
+        height: auto;
+        padding: 1rem;
+    }
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+    .form-group input, .form-group textarea {
+        font-size: 1.2rem;
+    }
+}
+

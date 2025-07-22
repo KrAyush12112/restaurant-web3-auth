@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="section4.css">
+    <link rel="stylesheet" href="autosilde.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://kit.fontawesome.com/dd9b48909d.js" crossorigin="anonymous"></script>
+    <script src="hamburger/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.1/web3.min.js" defer></script>
+    <script src="/server.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="modal.js"></script>
+
+    <!-- <script src="web3auth.js" defer></script> -->
+    <title>Restraunt Website</title>
+</head>
+<body>
+    <header class="header header-img">
+
+        <div class="slideshow-container">
+            <div class="slide slide1 active"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+            <div class="slide slide5"></div>
+        </div>
+
+        <!-- Dots Navigation -->
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/FullLogo_Transparent.png" alt="">
+                </div>
+                <div id="navigation">
+                    <div id="menu" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <div class="nav" id="nav">
+                        <ul class="nav-list">
+                            <li class="nav-items"><a href="#home" id="home-link">Home</a></li>
+                            <li class="nav-items"><a href="#about" id="about-link">About</a></li>
+                            <li class="nav-items"><a href="#service" id="service-link">Services</a></li>
+                            <li class="nav-items"><a href="#food-catlog" id="menu-link">Menu</a></li>
+                            <li class="nav-items"><a href="#contact" id="contact-link">Contact</a></li>
+                            <li class="btn"><button type="button" class="Register"><a href="LogInPage.html">Register</a></button> </li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="moto">
+                <h1 class="moto_h">Enjoy Our <br> Delicious Meal</h1>
+                <p class="moto_p">Where every bite tells a story, Crafted with love, served with pride. Step in for comfort, stay for the flavor<br><b>-Your table is waiting inside-</b>
+                </p>
+                <button class="order-now"><a href="#">Order now</a></button>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <section class="section1" id="about">
+        <div class="container">
+            <div class="aboutUsWrapper">
+                <div class="aboutUs-imgs">
+                    <div class="imgs rest-img"><img src="images/rest-image.jpg" alt=""></div>
+                    <div class="imgs rest-food"><img src="images/rest-food.jpeg" alt=""></div>
+                    <div class="imgs rest-eater"><img src="images/rest-eaters.jpg" alt=""></div>
+                    <div class="imgs rest-sitplace"><img src="images/rest-sitplace.png" alt=""></div>
+                </div>
+    
+                <div class="about-us">
+                    <h3 class="main-heading">About Us</h3>
+                    <h1 class="sub-heading">Welcome To Our Restraunt</h1>
+                    <p class="para">We have been serving delicious food since 1997. Our mission is to provide high-quality meals with fresh ingredients and bring joy to our customers.</p>
+                    
+                   
+                    <div class="about-counts">
+                        <div class="experience">
+                            <h1>25+</h1>
+                            <p>Years</p>
+                            <h5>Experience</h5>
+                        </div>
+                        <div class="chef-count">
+                            <h1>50+</h1>
+                            <p>popular</p>
+                            <h5>Master Chefs</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- #################################SECTION 2 ################################# -->
+
+    <section class="section2" id="service">
+        <div class="container section2-container">
+            <!-- for heading of service and its decruption -->
+            <div class="service-heading">
+                <h3 class="main-heading ">Services</h3>
+                <h1 class="sub-heading">What we offer...</h1>
+            </div>
+
+            <!-- for box in services -->
+            <div class="service-container">
+                <div class="service-box service-master">
+                    <div class="service-logo"><i class="fa-solid fa-user-tie fa-5x" style="color: #ff9500;"></i></div>
+                    <div class="service-description">
+                        <h3 class="service-head-st">Master Chefs</h3>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolorum?</p>
+
+                    </div>
+                </div>
+                <div class="service-box service-online-order">
+                    <div class="service-logo"><i class="fa-solid fa-cart-shopping fa-5x" style="color: #ff9500;"></i></div>
+                    <div class="service-description">
+                        <h3 class="service-head-st">Online Order</h3>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, facilis.</p>
+
+                    </div>
+                </div>
+                <div class="service-box service-quality">
+                    <div class="service-logo"><i class="fa-solid fa-star fa-5x" style="color: #ff9500;"></i></div>
+                    <div class="service-description">
+                        <h3 class="service-head-st">Book Table</h3>
+                        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, accusamus.</p>
+
+                    </div>
+                </div>
+                <div class="service-box service-full-hr">
+                    <div class="service-logo"><i class="fa-solid fa-headphones-simple fa-5x" style="color: #ff9500;"></i></div>
+                    <div class="service-description">
+                        <h3 class="service-head-st">24/7 Service</h3>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, maxime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    
+<!-- Section 3 for food selection -->
+    <section class="section3" id="food-catlog">
+        <div class="container section2-container">
+            <h1 class="sub-heading">Whats's on your mind</h1>
+            <div class="food-wrapper">
+                <div class="food-item" data-food="burger" data-price="299">
+                    <div class="food-image burger">
+                        <img src="./images/burger-logo.png" alt="">
+                    </div>
+                    <p class="para">Burger</p>
+                </div>
+
+                <div class="food-item" data-food="thali" data-price="399">
+                    <div class="food-image thali">
+                        <img src="./images/thali.png" alt="">
+                    </div>
+                    <p class="para">Thali</p>
+                </div>
+
+                <div class="food-item" data-food="pizza" data-price="499">
+                    <div class="food-image pizza">
+                        <img src="./images/pizza.png" alt="">
+                    </div>
+                    <p class="para">Pizza</p>
+                </div>
+
+                <div class="food-item"  data-food="briyani" data-price="599">
+                    <div class="food-image briyani">
+                        <img src="./images/briyani.webp" alt="">
+                    </div>
+                    <p class="para">Briyani</p>
+                </div>
+
+                <div class="food-item"  data-food="paneer" data-price="199">
+                    <div class="food-image paneer">
+                        <img src="./images/paneer.png" alt="">
+                    </div>
+                    <p class="para">Paneer</p>
+                </div>
+
+                <div class="food-item" data-food="cake" data-price="249">
+                    <div class="food-image cake">
+                        <img src="./images/cake.png" alt="">
+                    </div>
+                    <p class="para">Cake</p>
+                </div>
+
+                <div class="food-item" data-food="rolls" data-price="149">
+                    <div class="food-image rolls">
+                        <img src="./images/rolls.png" alt="">
+                    </div>
+                    <p class="para">Rolls</p>
+                </div>
+
+                <div class="food-item" data-food="noodles" data-price="199">
+                    <div class="food-image noodles">
+                        <img src="./images/Chinese-Noodles-PNG-Pic.png" alt="">
+                    </div>
+                    <p class="para">Noodles</p>
+                </div>
+
+                <div class="food-item" data-food="dosa" data-price="99">
+                    <div class="food-image dosa">
+                        <img src="./images/dosa-images-png_5648238.png" alt="">
+                    </div>
+                    <p class="para">Dosa</p>
+                </div>
+
+                <div class="food-item" data-food="ice-cream" data-price="99">
+                    <div class="food-image ice-cream">
+                        <img src="images/ice-cream-png_582266.png" alt="">
+                    </div>
+                    <p class="para">Ice Cream</p>
+                </div>
+                
+<!-- // Hidden food items for view more functionality -->
+                    <div class="food-item hidden-item">
+                        <div class="food-image burger" >
+                            <img src="./images/burger-logo.png" alt="">
+                        </div>
+                        <p class="para">Burger</p>
+                    </div>
+    
+                    <div class="food-item hidden-item">
+                        <div class="food-image thali">
+                            <img src="./images/thali.png" alt="">
+                        </div>
+                        <p class="para">Thali</p>
+                    </div>
+    
+                    <div class="food-item hidden-item">
+                        <div class="food-image pizza">
+                            <img src="./images/pizza.png" alt="">
+                        </div>
+                        <p class="para">Pizza</p>
+                    </div>
+    
+                    <div class="food-item hidden-item">
+                        <div class="food-image briyani">
+                            <img src="./images/briyani.webp" alt="">
+                        </div>
+                        <p class="para">Briyani</p>
+                    </div>
+    
+                    <div class="food-item hidden-item">
+                        <div class="food-image paneer">
+                            <img src="./images/paneer.png" alt="">
+                        </div>
+                        <p class="para">Paneer</p>
+                    </div>
+    
+                    <div class="food-item hidden-item">
+                        <div class="food-image cake">
+                            <img src="./images/cake.png" alt="">
+                        </div>
+                        <p class="para">Cake</p>
+                    </div>
+    
+                    <div class="food-item hidden-item">
+                        <div class="food-image rolls">
+                            <img src="./images/rolls.png" alt="">
+                        </div>
+                        <p class="para">Rolls</p>
+                    </div>
+    
+                    <div class="food-item hidden-item">
+                        <div class="food-image noodles">
+                            <img src="./images/Chinese-Noodles-PNG-Pic.png" alt="">
+                        </div>
+                        <p class="para">Noodles</p>
+                    </div>
+    
+                    <div class="food-item hidden-item">
+                        <div class="food-image dosa">
+                            <img src="./images/dosa-images-png_5648238.png" alt="">
+                        </div>
+                        <p class="para">Dosa</p>
+                    </div>
+    
+                    <div class="food-item hidden-item">
+                        <div class="food-image ice-cream">
+                            <img src="images/ice-cream-png_582266.png" alt="">
+                        </div>
+                        <p class="para">Ice Cream</p>
+                    </div>
+    
+                
+                <a class="view-more" href="">View More</a>
+            </div>
+            
+            <!-- VIEW MORE BUTTON -->
+            
+        </div>
+    </section>  
+
+    
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            
+            <div class="modal-food-image" id="modalFoodImage">
+                <img id="modalImg" src="" alt="">
+            </div>
+            
+            <h2 class="modal-title" id="modalTitle">Food Item</h2>
+            
+            <div class="quantity-section">
+                <div class="quantity-label">Quantity</div>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                    <span class="quantity-display" id="quantityDisplay">1</span>
+                    <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                </div>
+            </div>
+            
+            <div class="description-section">
+                <h3 class="description-title">Description</h3>
+                <p class="description-text" id="descriptionText">
+                    Fresh and delicious food item prepared with finest ingredients and authentic flavors.
+                </p>
+            </div>
+            
+            <div class="instructions-section">
+                <label class="instructions-label" for="specialInstructions">Special Instructions</label>
+                <textarea 
+                    class="instructions-input" 
+                    id="specialInstructions" 
+                    placeholder="Any special preparation requests? (e.g., less spicy, extra cheese, no onions)"
+                ></textarea>
+            </div>
+            
+            <div class="price-section">
+                <div class="price-label">Total Cost</div>
+                <div class="total-price" id="totalPrice">₹299</div>
+            </div>
+            
+            <button class="confirm-btn" onclick="addToOrder()">Add to Order</button>
+        </div>
+    </div>
+
+
+<!-- Section 4 for reservation table -->
+    <section class="section4" id="contact">
+        <div class="container">
+            <div class="reserve-table">
+                <div class=reserve-image>
+                    <img src="./images/reservationtable.jpeg" alt="">
+                </div>
+
+                <div class="reserve-form">
+                    <div class="form-headings">
+                        <h3 class="main-heading">For reservation</h3>
+                        <h1 class="sub-heading">Book Your Seat</h1>
+                    </div>
+                    <form action="/Booked" method="post" class="form-wrapper">
+                        <!-- <label for="name"></label> -->
+                        <input type="text" id="name" required placeholder="Name">
+                        <!-- <label for="email"></label> -->
+                        <input type="email" id="email" required placeholder="Email">
+                        <!-- <label for="time"></label> -->
+                        <input type="datetime" id="time" required placeholder="Date & Time">
+                        <!-- <label for="count"></label> -->
+                        <select name="" id="count">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <textarea name="" placeholder="Additional Request" rows="3" ></textarea>
+                        <button class="view-more"><a class="view-more" id="book-now"  href="">Book Now</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- for footer section -->
+<footer class="footer">
+    <div class="container main-footer">
+        <div class="footer-section">
+            <div class="company">
+                <h3 class="main-heading">COMPANY NAME</h3>
+                <p class="para">Our mission is to provide high-quality <br> meals with fresh ingredients.</p>
+            </div>
+
+            <div class="service-footer">
+                <h3 class="main-heading">Servies</h3>
+                <a class="para" href="">Masterchef</a>
+                <a class="para" href="">Online Order</a>
+                <a class="para" href="">Booking</a>
+                <a class="para" href="">Home delivery</a>
+                <a class="para" href="">Meet Up's</a>
+                <a class="para" href="">Quality</a>
+            </div>
+
+            <div class="links">
+                <h3 class="main-heading">Useful links</h3>
+                <a href="" class="para">Become an Affilate</a>
+                <a href="" class="para">Help</a>
+                <a href="" class="para">FAQ</a>
+                <a href="" class="para">Account</a>
+            </div>
+
+            <div class="contact">
+                <h3 class="main-heading">Contacts</h3>
+                <a href="" class="para">Uttar Pradeh, Up 226028, India</a>
+                <a href="" class="para">info@example.com</a>
+                <a href="" class="para">+9101010010</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-section">
+        @2024 copyright, All Right Reserved
+    </div>
+</footer> 
+</body>
+</html> 
