@@ -41,7 +41,7 @@ It enables users to connect their Ethereum wallet before placing an order.
 ![Homepage](Screenshots/homepage.png)
 
 ### Order Menu 
-![Order menu].(Screenshots/OrderCount.png)
+![Order menu](Screenshots/OrderCount.png)
 
 ### Connect Wallet Button  
 ![Connect Wallet](Screenshots/WalletConnected.png)
